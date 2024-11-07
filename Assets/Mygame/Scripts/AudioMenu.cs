@@ -46,10 +46,14 @@ public class AudioMenu : MonoBehaviour
         if (myAudiosource.isPlaying)
         {
             myAudiosource.Pause();
+            playPauseButtonText.text = "Start";
+
         }
         else
         {
             myAudiosource.Play();
+            playPauseButtonText.text = "Stop";
+
         }
     }
 }
