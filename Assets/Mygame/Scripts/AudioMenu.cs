@@ -30,28 +30,27 @@ public class AudioMenu : MonoBehaviour
 
 
     public void PlayAudio() {
-        myAudiosource.Play();
+        //myAudiosource.Play();
+        FindAnyObjectByType<AudioManager>().managerPlay("test");
     }
 
     public void PauseAudio() {
-        myAudiosource.Pause();
+        //myAudiosource.Pause();
+        FindAnyObjectByType<AudioManager>().managerPause("test");
+
     }
 
     public void ResetAudio() {
-        myAudiosource.Stop();
+        //myAudiosource.Stop();
+        FindAnyObjectByType<AudioManager>().managerStop("test");
     }
 
-    public void ToggleAudio()
-    {
-        if (myAudiosource.isPlaying)
-        {
-            myAudiosource.Pause();
+    public void ToggleAudio() {
+        if (myAudiosource.isPlaying) {
+            FindAnyObjectByType<AudioManager>().managerPause("test");
             playPauseButtonText.text = "Start";
-
-        }
-        else
-        {
-            myAudiosource.Play();
+        } else {
+            FindAnyObjectByType<AudioManager>().managerPlay("test");
             playPauseButtonText.text = "Stop";
 
         }

@@ -286,14 +286,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: Sound 1
+  - name: test
     clip: {fileID: 8300000, guid: 2f8efc03f9c316046a5db85141b2a6aa, type: 3}
     volume: 0.753
-    pitch: 2.28
-  - name: Sound 2
+    pitch: 0.29
+    audioSource: {fileID: 0}
+  - name: WellWellWell
     clip: {fileID: 8300000, guid: ececd4cbac8810c4d874214c722c487c, type: 3}
     volume: 0.645
     pitch: 1.99
+    audioSource: {fileID: 0}
 --- !u!4 &347152986
 Transform:
   m_ObjectHideFlags: 0
