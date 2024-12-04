@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16591882b49efb54fb77bcc63236a129, type: 3}
-  m_Name: Jakob Berger
+  m_Name: 16-vspaic
   m_EditorClassIdentifier: 
-  studentName: Jakob Berger
-  eyeColor: {r: 0, g: 0, b: 0, a: 0}
-  studentImage: {fileID: 21300000, guid: 51feaf93b36edec4b8d651a1a0a5d264, type: 3}
-  studentClip: {fileID: 8300000, guid: 594ec49d7cd634e4fbdfccb6c14f2f7c, type: 3}
+  studentName: victor spai
+  eyeColor: {r: 0.21960784, g: 0.09411765, b: 0, a: 0}
+  studentImage: {fileID: 21300000, guid: d9c52291634e82947a22ec566dbed8bb, type: 3}
+  studentClip: {fileID: 8300000, guid: 991d689260de1b047bc674d59aa88a16, type: 3}

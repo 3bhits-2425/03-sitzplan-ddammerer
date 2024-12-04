@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16591882b49efb54fb77bcc63236a129, type: 3}
-  m_Name: Fischinger
+  m_Name: 17-gwagner
   m_EditorClassIdentifier: 
-  studentName: Georg Fischinger
-  eyeColor: {r: 0, g: 0, b: 0, a: 0}
-  studentImage: {fileID: 21300000, guid: 4289fb3d93c031c478cf28dbde5fd81f, type: 3}
-  studentClip: {fileID: 8300000, guid: f4c8e3d46d4ef854c82e797f8668928b, type: 3}
+  studentName: gabriel wagner
+  eyeColor: {r: 0.21960784, g: 0.09411765, b: 0, a: 1}
+  studentImage: {fileID: 21300000, guid: 0621bbffbd5f25849a94ce46c41b4c8b, type: 3}
+  studentClip: {fileID: 8300000, guid: d4a9fd7464ae1604ba0c77757ef17e92, type: 3}

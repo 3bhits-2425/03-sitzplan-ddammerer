@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16591882b49efb54fb77bcc63236a129, type: 3}
-  m_Name: Vinzent Aichinger
+  m_Name: 01-vaichinger
   m_EditorClassIdentifier: 
   studentName: Vinzent Aichinger
   eyeColor: {r: 0, g: 0.07060099, b: 1, a: 0}

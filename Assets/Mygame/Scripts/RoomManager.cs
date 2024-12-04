@@ -1,32 +1,33 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RoomManager : MonoBehaviour
 {
-    [SerializeField] private TableLayoutData tablelLayout; // Ref zu Tablelayout script
+    [SerializeField] private TableLayoutData tableLayout; // Reference to TableLayout script
     [SerializeField] private StudentData[] students;
-    [SerializeField] private GameObject tablePrefab;  //Prefab für Tisch
-    [SerializeField] private GameObject chairPrefab; //Prefab für Stuhl  
+    [SerializeField] private GameObject tablePrefab;  // Prefab for table
+    [SerializeField] private GameObject chairPrefab; // Prefab for chairs  
 
     void Start()
     {
-        for (int row = 0; row < tablelLayout.rows; row++) {
-            for(int col = 0; col < tablelLayout.columns; col++){
-                GameObject table = Instantiate(tablePrefab, new Vector3(col * tablelLayout.tableSpacing, 0, row * tablelLayout.tableSpacing), Quaternion.identity, transform); // transform macht dass alles am manager clebt
+        for (int row = 0; row < tableLayout.rows; row++)
+        {
+            for (int col = 0; col < tableLayout.columns; col++)
+            {
+                // Table position
+                Vector3 tablePosition = new Vector3(col * tableLayout.tableSpacing, 0, row * tableLayout.tableSpacing);
 
-                //Transform[] 
-            
-            }
-                
-            }
+                // Instantiate table
+                GameObject table = Instantiate(tablePrefab, tablePosition, Quaternion.identity, transform);
 
+                // Chair positions relative to table
+                Vector3 leftChairPosition = tablePosition + new Vector3(0.5f, 0, 1);  // Adjust X offset for left chair
+                Vector3 rightChairPosition = tablePosition + new Vector3(-0.5f, 0, 1);  // Adjust X offset for right chair
+
+                // Instantiate chairs
+                Instantiate(chairPrefab, leftChairPosition, Quaternion.identity, transform);
+                Instantiate(chairPrefab, rightChairPosition, Quaternion.identity, transform);
+            }
         }
-
-    
-
-    void Update()
-    {
-        
     }
 }
