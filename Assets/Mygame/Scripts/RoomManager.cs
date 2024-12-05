@@ -21,12 +21,12 @@ public class RoomManager : MonoBehaviour
                 GameObject table = Instantiate(tablePrefab, tablePosition, Quaternion.identity, transform);
 
                 // Chair positions relative to table
-                Vector3 leftChairPosition = tablePosition + new Vector3(0.5f, 0, 1);  // Adjust X offset for left chair
-                Vector3 rightChairPosition = tablePosition + new Vector3(-0.5f, 0, 1);  // Adjust X offset for right chair
+                Vector3 leftChairPosition = tablePosition + new Vector3(0.5f, 0, 1);  // Adjust offset for left chair
+                Vector3 rightChairPosition = tablePosition + new Vector3(-0.5f, 0, 1);  // Adjust offset for right chair
 
                 // Instantiate chairs
                 Instantiate(chairPrefab, leftChairPosition, Quaternion.identity, transform);
-                Instantiate(chairPrefab, rightChairPosition, Quaternion.identity, transform);
+                Instantiate(chairPrefab, rightChairPosition, Quaternion.identity, transform); //createAssetMenu : scriptableobject
             }
         }
     }

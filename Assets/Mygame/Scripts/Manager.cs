@@ -17,7 +17,7 @@ public class Manager : MonoBehaviour
                 Vector2 position = new Vector2(i * spacing, j * spacing);
                 
                 GameObject obj = Instantiate(prefab, position, Quaternion.identity, parent.transform);
-                obj.transform.SetParent(parent);
+                obj.transform.SetParent(parent.transform);
             }
         }
     }
