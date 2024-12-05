@@ -21,12 +21,15 @@ public class RoomManager : MonoBehaviour
                 GameObject table = Instantiate(tablePrefab, tablePosition, Quaternion.identity, transform);
 
                 // Chair positions relative to table
-                Vector3 leftChairPosition = tablePosition + new Vector3(0.5f, 0, 1);  // Adjust offset for left chair
-                Vector3 rightChairPosition = tablePosition + new Vector3(-0.5f, 0, 1);  // Adjust offset for right chair
+                Transform leftPos = table.transform.Find("ChairPos1");
+                Transform rightPos = table.transform.Find("ChairPos2");
 
                 // Instantiate chairs
-                Instantiate(chairPrefab, leftChairPosition, Quaternion.identity, transform);
-                Instantiate(chairPrefab, rightChairPosition, Quaternion.identity, transform); //createAssetMenu : scriptableobject
+             
+                Instantiate(chairPrefab, leftPos.position, Quaternion.identity, transform);
+                Instantiate(chairPrefab, rightPos.position, Quaternion.identity, transform);
+                
+
             }
         }
     }

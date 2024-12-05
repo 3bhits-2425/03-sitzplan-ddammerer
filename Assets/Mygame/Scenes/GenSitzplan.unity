@@ -154,15 +154,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableLayout: {fileID: 11400000, guid: 17281580dc6bb594da3cde660031f86a, type: 2}
   students:
+  - {fileID: 11400000, guid: 1d1e5c7a8190b2b4eb00fd41c948c34a, type: 2}
+  - {fileID: 11400000, guid: 9cf919c3588c594458fa03361c56f867, type: 2}
+  - {fileID: 11400000, guid: 1a81e04544a78d045a6f6b039a462eea, type: 2}
+  - {fileID: 11400000, guid: 6e2215500d8805644b8ade80ef9586b2, type: 2}
+  - {fileID: 11400000, guid: 6e2215500d8805644b8ade80ef9586b2, type: 2}
+  - {fileID: 11400000, guid: 6e2215500d8805644b8ade80ef9586b2, type: 2}
+  - {fileID: 11400000, guid: 6e2215500d8805644b8ade80ef9586b2, type: 2}
+  - {fileID: 11400000, guid: 6e2215500d8805644b8ade80ef9586b2, type: 2}
   - {fileID: 11400000, guid: baf8885659ea4bf4290a11a9c124c5f8, type: 2}
   - {fileID: 11400000, guid: d388a283e5a1135428ff2c31f147553e, type: 2}
-  - {fileID: 11400000, guid: 1d1e5c7a8190b2b4eb00fd41c948c34a, type: 2}
   - {fileID: 11400000, guid: b2e78d779886b2f499731e55f8e9c845, type: 2}
   - {fileID: 11400000, guid: 6e5aad62da04dbe418e8f0b6cce80474, type: 2}
-  - {fileID: 11400000, guid: 9cf919c3588c594458fa03361c56f867, type: 2}
   - {fileID: 11400000, guid: 8287c9f63ef8f0c458029bb1c22ecffe, type: 2}
   - {fileID: 11400000, guid: 8ff390632bf2fb8429d0ae88d5512627, type: 2}
-  - {fileID: 11400000, guid: 1a81e04544a78d045a6f6b039a462eea, type: 2}
   - {fileID: 11400000, guid: cf0a0d8ba8384e5419e13ae71e4e4abb, type: 2}
   - {fileID: 11400000, guid: 71112562a3c28394eadaa3ff106eab73, type: 2}
   - {fileID: 11400000, guid: b06acc98eb1ff8641bda24053dcf02f8, type: 2}
@@ -173,7 +178,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e25a533cae6090e40b01f83bdeda4ba4, type: 2}
   - {fileID: 11400000, guid: d7457c34a0c9b244e8e9b09788ab0ec0, type: 2}
   - {fileID: 11400000, guid: c7372ab9b9a7f394c8c296e9eae966b1, type: 2}
-  tablePrefab: {fileID: 938667293746224799, guid: a86bdf5e848d3924f8e7bf4d1b35382c, type: 3}
+  tablePrefab: {fileID: 7855533754681449883, guid: 0107f7460ed979f47bdd12875dda9a48, type: 3}
   chairPrefab: {fileID: 3715039671671602591, guid: fa3268b1aec056246a8aee33bbdd63e6, type: 3}
 --- !u!4 &1484761217
 Transform:
@@ -226,7 +231,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
