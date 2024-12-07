@@ -1,5 +1,7 @@
 using System.Collections;
 using UnityEngine;
+using TMPro;
+
 
 public class RoomManager : MonoBehaviour
 {
@@ -10,6 +12,8 @@ public class RoomManager : MonoBehaviour
 
     void Start()
     {
+        int currentStudent = 0; 
+
         for (int row = 0; row < tableLayout.rows; row++)
         {
             for (int col = 0; col < tableLayout.columns; col++)
@@ -24,13 +28,43 @@ public class RoomManager : MonoBehaviour
                 Transform leftPos = table.transform.Find("ChairPos1");
                 Transform rightPos = table.transform.Find("ChairPos2");
 
-                // Instantiate chairs
-             
-                Instantiate(chairPrefab, leftPos.position, Quaternion.identity, transform);
-                Instantiate(chairPrefab, rightPos.position, Quaternion.identity, transform);
-                
 
+
+                // Add students to chairs
+                if (currentStudent < students.Length)                   
+                {
+                    StudentToChair(leftPos, students[currentStudent]);
+                    currentStudent++;
+                }
+
+                if (currentStudent < students.Length)
+                {
+                    StudentToChair(rightPos, students[currentStudent]);
+                    currentStudent++;
+                }
             }
         }
+    }
+
+
+
+    private void StudentToChair(Transform chairPosition, StudentData studentData)
+    {
+        // Instantiate chair
+        GameObject chair = Instantiate(chairPrefab, chairPosition.position, Quaternion.identity, transform);
+
+        // Get sprite position
+        Transform spritePos = chair.transform.Find("SpritePos");
+
+
+        if (studentData.studentImage != null)
+        {
+            SpriteRenderer spriteRenderer = spritePos.GetComponent<SpriteRenderer>();           // Get sprite renderer component
+            spriteRenderer.sprite = studentData.studentImage;                                   // zuweisen des Bildes
+            spriteRenderer.size = new Vector2(1.0f, 1.0f);
+
+        }
+
+
     }
 }
